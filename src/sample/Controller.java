@@ -22,21 +22,17 @@ public class Controller {
     private JFXPasswordField tf_pass;
     @FXML
     private JFXComboBox cb_rol;
-
     @FXML
-    public void initialize() {
-        //cb_rol.getItems().removeAll(cb_rol.getItems());
-       // cb_rol.getItems().addAll("Manager", "Gerente", "Vendedor", "Admin");
-      //  cb_rol.getSelectionModel().select("Vendedor");
-    }
+    private JFXButton btn_reg;
+    @FXML
+    private JFXTextField tf_nombre;
+
 
     @FXML
     public void log_in(ActionEvent event) throws Exception {
 
-        System.out.print("ayuwoki");
-        if(tf_user.getText().equals("user")  && tf_pass.getText().equals("pass")){
 
-            System.out.print("heehee");
+        if(tf_user.getText().equals("user")  && tf_pass.getText().equals("pass")){
 
             Stage primaryStage = new Stage();
 
@@ -51,6 +47,12 @@ public class Controller {
             primaryStage.setScene(login);
             primaryStage.show();
         }
+
+    }
+
+    @FXML
+    public void registro(ActionEvent event) throws Exception{
+        String nombre = tf_nombre.getText();
 
     }
 
