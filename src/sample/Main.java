@@ -18,11 +18,11 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Parent logged =FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        //primaryStage.initStyle(StageStyle.TRANSPARENT);
 
         Scene login = new Scene(root);
 
-        primaryStage.setTitle("Aplicación Amochital *pollito*");
+        primaryStage.setTitle("Log In");
 
 
         primaryStage.setScene(login);
